@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50mm" height="55mm" viewBox="0 0 177.16537 194.88189">
+	<g stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+		<g transform="matrix(.632 0 0 .56 490.691 -22.307)" opacity=".71">
+			<ellipse ry="164.286" rx="61.429" cy="216.648" cx="-705.714" fill="#fff"/>
+			<ellipse ry="35.714" rx="34.286" cy="213.791" cx="-705.714" fill="#008000"/>
+		</g>
+		<g transform="matrix(.632 0 0 .56 577.911 -22.307)" opacity=".71">
+			<ellipse cx="-705.714" cy="216.648" rx="61.429" ry="164.286" fill="#fff"/>
+			<ellipse cx="-705.714" cy="213.791" rx="34.286" ry="35.714" fill="#008000"/>
+		</g>
+	</g>
+</svg>

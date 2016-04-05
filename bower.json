@@ -1,0 +1,22 @@
+{
+  "name": "Animations",
+  "authors": [
+    "Carolina Penagos"
+  ],
+  "description": "this is a try to learn animations",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "0.2.15"
+  },
+  "resolutions": {
+    "angular": "~1.4.8"
+  }
+}

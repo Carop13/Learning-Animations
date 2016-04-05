@@ -1,0 +1,507 @@
+/* Reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* Sticky footer*/
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -110px;
+}
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+.site-footer, .page-wrap:after {
+    height: 110px;
+}
+.site-footer,
+header {
+    background: dodgerblue;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+}
+/* End Sticky footer*/
+
+
+/* /////////////////////////////////////////////////////// */
+
+.main-content{
+    box-sizing: border-box;
+    width: 940px;
+    border: 2px solid #333;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+}
+header h1{
+    width: 30%;
+    margin: 10px auto;
+   /* padding: 16px;*/
+    float: left;
+}
+/* Universal Selectors */
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.menu{
+    width: 70%;
+    float: right;
+    margin: 10px auto;
+    list-style: none;
+    display: inline-flex;
+}
+
+.menu li{
+    margin: auto;
+}
+.menu a{
+    text-decoration: none;
+}
+/*First animation */
+@keyframes swing {
+    100%{transform: rotate(360deg);}
+}
+
+.diamond img {
+    animation: swing 10s infinite linear;
+}
+
+.sidebar{
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+}
+.diamond{
+    z-index: 1;
+}
+.sidebar .diamond img{
+    position: absolute;
+    z-index: 0;
+}
+.content h1{
+    z-index: 2;
+    font-size: 38px;
+}
+.content{
+    width: 380px;
+    height: 380px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.animation-box{
+    width: 100%;
+    height: 350px;
+}
+/*End first animation*/
+
+/* Simple by me */
+.box-section{
+    width: 50%;
+    perspective: 1000px;
+}
+.box{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(0deg) rotateZ(30deg);
+    left: 30%;
+}
+.box img{
+    position: absolute;
+}
+.back {
+    transform: translateZ(-100px);
+}
+.front {
+    transform: translateZ(100px);
+}
+.top {
+    transform: translateY(-100px) rotateX(-90deg);
+}
+.bottom {
+    transform: translateY(100px) rotateX(90deg);
+}
+.left {
+    transform: translateX(-100px) rotateY(90deg);
+}
+.right {
+    transform: translateX(100px) rotateY(-90deg);
+}
+@keyframes spin2 {
+    0%, 100% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    50% { transform: rotateX(90deg) rotateY(90deg) rotateZ(0deg); }
+}
+.box {
+    animation: spin2 5s infinite linear;
+}
+
+.text-about{
+    float: right;
+    width: 50%;
+    padding: 20px;
+}
+.chancho{
+    position: absolute;
+    left: 0px;
+}
+.animation-toy h2{
+    text-align: center;
+}
+/*End first animation*/
+
+
+@keyframes moveEye {
+    0%, 100% { transform: translate(10px); }
+    50% { transform: translate(-10px); }
+}
+
+.my-circle{
+    animation: moveEye 2s infinite linear;
+}
+
+@keyframes moveBall {
+    5% { transform: translate(150px); }
+    10% { transform: translateY(80px) translateX(150px); }
+    20% { transform: translateY(80px) translateX(280px);  }
+    30% { transform: translateY(160px) translateX(280px); }
+    40% { transform: translateY(160px) translateX(400px); }
+    50% { transform: translateY(240px) translateX(400px); }
+    60% { transform: translateY(240px) translateX(520px); }
+    70% { transform: translateY(320px) translateX(520px); }
+    80% { transform: translateY(320px) translateX(640px); }
+    90% { transform: translateY(400px) translateX(640px); }
+    100% { transform: translateY(400px) translateX(750px); }
+}
+.ball2:before {
+    content: "";
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0.1) 40%);
+    filter: blur(5px);
+    z-index: 2;
+}
+
+.ball2{
+    background: radial-gradient(circle at 50% 120%, #b0aad6 10%, #aa9bd6 10%, #987cd6 30%, #8462d6 100%);
+    transform-origin: 0% 0%;
+    animation: moveBall 10s infinite ease-out;
+    /*animation: rotateBall 5s infinite linear;*/
+}
+
+/*Creating Real Eyes*/
+.eye-animation{
+    width: 100%;
+}
+
+.creating-eyes{
+    width: 50%;
+    float: left;
+}
+.creating-eyes .stage {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 20px;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+}
+.creating-eyes .ball .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(90deg) translateZ(-150px);
+    z-index: -1;
+}
+.creating-eyes .ball {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 120%, #323232, #fafafa 80%, #ffffff 100%);
+}
+.creating-eyes .ball:before {
+    content: "";
+    position: absolute;
+    background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    bottom: 2.5%;
+    left: 5%;
+    opacity: 0.6;
+    height: 100%;
+    width: 90%;
+    filter: blur(5px);
+    z-index: 2;
+}
+.creating-eyes .ball:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+    transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+    filter: blur(10px);
+}
+.creating-eyes .iris {
+    width: 40%;
+    height: 40%;
+    margin: 30%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, #208ab4 0%, #6fbfff 30%, #4381b2 100%);
+    transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+    position: absolute;
+    animation: move-eye-skew 5s ease-out infinite;
+}
+.creating-eyes .iris:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 37.5%;
+    height: 37.5%;
+    border-radius: 50%;
+    top: 31.25%;
+    left: 31.25%;
+    background: black;
+}
+.creating-eyes .iris:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 31.25%;
+    height: 31.25%;
+    border-radius: 50%;
+    top: 18.75%;
+    left: 18.75%;
+    background: rgba(255, 255, 255, 0.2);
+}
+@keyframes move-eye-skew {
+    0% {
+        transform: none;
+    }
+    20% {
+        transform: translateX(-68px) translateY(30px) skewX(15deg) skewY(-10deg) scale(0.95);
+    }
+    25%, 44% {
+        transform: none;
+    }
+    50%, 60% {
+        transform: translateX(68px) translateY(-40px) skewX(5deg) skewY(2deg) scaleX(0.95);
+    }
+    66%, 100% {
+        transform: none;
+    }
+}
+
+/*   bubble    */
+.creating-bubble-by-me{
+    width: 50%;
+    float: right;
+}
+.creating-bubble-by-me .stage {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 20px;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+}
+
+.creating-bubble-by-me .ball {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 120%, #b0aad6 10%, #aa9bd6 10%, #987cd6 30%, #8462d6 100%);
+    animation: bubble-anim 5s ease-out infinite;
+}
+.creating-bubble-by-me .ball:before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0.1) 40%);
+    filter: blur(5px);
+    z-index: 2;
+}
+
+.creating-bubble-by-me .ball:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*border-radius: 100%;*/
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+    transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+    filter: blur(10px);
+}
+
+@keyframes bubble-anim {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scaleY(0.95) scaleX(1.05);
+    }
+    48% {
+        transform: scaleY(1.1) scaleX(0.9);
+    }
+    68% {
+        transform: scaleY(0.98) scaleX(1.02);
+    }
+    80% {
+        transform: scaleY(1.02) scaleX(0.98);
+    }
+    97%, 100% {
+        transform: scale(1);
+    }
+}
+
+/*//////////////////////////////////////////////////*/
+/*/////////// Code from CSS tutorial ///////////////*/
+/*//////////////////////////////////////////////////*/
+
+#top-container{
+    background: blue;
+    min-height: 800px;
+    padding: 230px 0;
+}
+
+#block{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url(images/trying-animations.png);
+    background-color: #fff;
+}
+
+.animated{
+    animation-duration: 3s ;
+}
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
